@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { provideNativeDateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Modal } from '../modal/modal';
 
 export const MY_DATE_FORMATS = {
   parse: {
@@ -25,5 +27,11 @@ export const MY_DATE_FORMATS = {
   ],
 })
 export class FormBusca {
+  constructor(public dialog: MatDialog) { }
+
   tipoPassagem: 'ida-volta' | 'somente-ida' = 'ida-volta'; // valor inicial
+
+  openDialog() {
+    this.dialog.open(Modal);
+  }
 }

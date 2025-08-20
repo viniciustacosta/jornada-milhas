@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -22,6 +23,7 @@ import { Home } from './pages/home/home';
 import { CardBusca } from './shared/card-busca/card-busca';
 import { CardDepoimento } from './shared/card-depoimento/card-depoimento';
 import { FormBusca } from './shared/form-busca/form-busca';
+import { Modal } from './shared/modal/modal';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { FormBusca } from './shared/form-busca/form-busca';
     Home,
     CardBusca,
     CardDepoimento,
-    FormBusca
+    FormBusca,
+    Modal
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { FormBusca } from './shared/form-busca/form-busca';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
