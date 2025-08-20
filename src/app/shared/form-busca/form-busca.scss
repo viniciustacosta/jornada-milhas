@@ -1,0 +1,40 @@
+.form-busca {
+    margin: 40px 0;
+    display: block;
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 16px 0;
+    }
+
+    .input-container {
+        margin-bottom: -1.25em;
+    }
+
+    .mat-button-toggle-checked {
+        background-color: rgba(135, 20, 250, 0.30)
+    }
+
+    .mat-button-toggle-not-checked {
+        background-color: #f9e4f3;
+    }
+
+    /* quando NÃO está selecionado */
+    mat-chip-option.mat-mdc-chip {
+        background-color: #f9e4f3;
+    }
+
+    /* quando está selecionado */
+    mat-chip-option.mat-mdc-chip.mat-mdc-chip-selected {
+        background-color: rgba(135, 20, 250, 0.3);
+    }
+
+
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
